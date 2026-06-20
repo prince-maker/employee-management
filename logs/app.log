@@ -1,0 +1,501 @@
+2026-06-20T00:19:13.987+05:30  INFO 13472 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 13472 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T00:19:13.993+05:30 DEBUG 13472 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T00:19:13.994+05:30  INFO 13472 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T00:19:14.748+05:30  INFO 13472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T00:19:14.837+05:30  INFO 13472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2026-06-20T00:19:15.271+05:30  INFO 13472 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T00:19:15.288+05:30  INFO 13472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T00:19:15.288+05:30  INFO 13472 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T00:19:15.353+05:30  INFO 13472 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1309 ms
+2026-06-20T00:19:15.525+05:30  INFO 13472 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T00:19:15.581+05:30  INFO 13472 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T00:19:16.038+05:30  INFO 13472 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T00:19:16.074+05:30  INFO 13472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T00:19:16.445+05:30  INFO 13472 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fdc2db6
+2026-06-20T00:19:16.447+05:30  INFO 13472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T00:19:16.500+05:30  WARN 13472 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T00:19:16.517+05:30  INFO 13472 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T00:19:17.475+05:30  INFO 13472 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T00:19:17.553+05:30  INFO 13472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:19:17.629+05:30  INFO 13472 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T00:19:17.928+05:30  WARN 13472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T00:19:18.399+05:30  INFO 13472 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T00:19:18.406+05:30  INFO 13472 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 4.912 seconds (process running for 5.674)
+2026-06-20T00:19:24.140+05:30  INFO 13472 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T00:19:24.146+05:30  INFO 13472 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T00:19:24.151+05:30  INFO 13472 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:19:24.154+05:30  INFO 13472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T00:19:24.163+05:30  INFO 13472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T00:19:28.979+05:30  INFO 10060 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 10060 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T00:19:28.984+05:30 DEBUG 10060 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T00:19:28.985+05:30  INFO 10060 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T00:19:30.198+05:30  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T00:19:30.358+05:30  INFO 10060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
+2026-06-20T00:19:31.157+05:30  INFO 10060 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T00:19:31.180+05:30  INFO 10060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T00:19:31.181+05:30  INFO 10060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T00:19:31.255+05:30  INFO 10060 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2206 ms
+2026-06-20T00:19:31.485+05:30  INFO 10060 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T00:19:31.566+05:30  INFO 10060 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T00:19:32.154+05:30  INFO 10060 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T00:19:32.193+05:30  INFO 10060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T00:19:32.681+05:30  INFO 10060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a58db42
+2026-06-20T00:19:32.683+05:30  INFO 10060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T00:19:32.756+05:30  WARN 10060 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T00:19:32.781+05:30  INFO 10060 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T00:19:33.931+05:30  INFO 10060 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T00:19:34.018+05:30  INFO 10060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:19:34.145+05:30  INFO 10060 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T00:19:34.536+05:30  WARN 10060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T00:19:35.185+05:30  INFO 10060 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T00:19:35.192+05:30  INFO 10060 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 6.936 seconds (process running for 9.238)
+2026-06-20T00:20:12.818+05:30  INFO 10060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T00:20:12.818+05:30  INFO 10060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T00:20:12.824+05:30  INFO 10060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-06-20T00:20:14.107+05:30  INFO 10060 --- [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 697 ms
+2026-06-20T00:21:04.135+05:30  INFO 10060 --- [http-nio-8080-exec-10] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T00:22:31.367+05:30  WARN 10060 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s548ms358µs400ns).
+2026-06-20T00:23:36.482+05:30  WARN 10060 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s113ms988µs800ns).
+2026-06-20T00:24:21.944+05:30  WARN 10060 --- [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s461ms287µs400ns).
+2026-06-20T00:26:48.806+05:30  INFO 10060 --- [http-nio-8080-exec-10] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T00:31:44.243+05:30  INFO 10060 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T00:31:44.249+05:30  INFO 10060 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T00:31:44.254+05:30  INFO 10060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:31:44.256+05:30  INFO 10060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T00:31:44.265+05:30  INFO 10060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T00:31:49.313+05:30  INFO 17420 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 17420 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T00:31:49.316+05:30 DEBUG 17420 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T00:31:49.317+05:30  INFO 17420 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T00:31:50.170+05:30  INFO 17420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T00:31:50.237+05:30  INFO 17420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2026-06-20T00:31:50.691+05:30  INFO 17420 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T00:31:50.707+05:30  INFO 17420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T00:31:50.707+05:30  INFO 17420 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T00:31:50.768+05:30  INFO 17420 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1397 ms
+2026-06-20T00:31:50.960+05:30  INFO 17420 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T00:31:51.019+05:30  INFO 17420 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T00:31:51.520+05:30  INFO 17420 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T00:31:51.558+05:30  INFO 17420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T00:31:51.948+05:30  INFO 17420 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d3d6ec
+2026-06-20T00:31:51.951+05:30  INFO 17420 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T00:31:52.005+05:30  WARN 17420 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T00:31:52.027+05:30  INFO 17420 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T00:31:53.060+05:30  INFO 17420 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T00:31:53.142+05:30  INFO 17420 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:31:53.235+05:30  INFO 17420 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T00:31:53.558+05:30  WARN 17420 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T00:31:54.156+05:30  INFO 17420 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T00:31:54.163+05:30  INFO 17420 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 5.474 seconds (process running for 6.609)
+2026-06-20T00:32:14.365+05:30  INFO 17420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T00:32:14.365+05:30  INFO 17420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T00:32:14.365+05:30  INFO 17420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-20T00:32:14.679+05:30  INFO 17420 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Finding employee with id:1
+2026-06-20T00:32:14.860+05:30  INFO 17420 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee fetched successfully with id:1
+2026-06-20T00:50:26.065+05:30  INFO 17420 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T00:50:26.072+05:30  INFO 17420 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T00:50:26.077+05:30  INFO 17420 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:50:26.079+05:30  INFO 17420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T00:50:26.087+05:30  INFO 17420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T00:50:31.195+05:30  INFO 5160 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 5160 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T00:50:31.197+05:30 DEBUG 5160 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T00:50:31.198+05:30  INFO 5160 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T00:50:32.054+05:30  INFO 5160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T00:50:32.112+05:30  INFO 5160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2026-06-20T00:50:32.558+05:30  INFO 5160 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T00:50:32.573+05:30  INFO 5160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T00:50:32.574+05:30  INFO 5160 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T00:50:32.633+05:30  INFO 5160 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1379 ms
+2026-06-20T00:50:32.823+05:30  INFO 5160 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T00:50:32.882+05:30  INFO 5160 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T00:50:33.396+05:30  INFO 5160 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T00:50:33.439+05:30  INFO 5160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T00:50:33.848+05:30  INFO 5160 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ebaf0d
+2026-06-20T00:50:33.851+05:30  INFO 5160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T00:50:33.906+05:30  WARN 5160 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T00:50:33.927+05:30  INFO 5160 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T00:50:34.949+05:30  INFO 5160 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T00:50:35.029+05:30  INFO 5160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T00:50:35.119+05:30  INFO 5160 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T00:50:35.414+05:30  WARN 5160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T00:50:35.944+05:30  INFO 5160 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T00:50:35.950+05:30  INFO 5160 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 5.35 seconds (process running for 6.429)
+2026-06-20T00:50:47.736+05:30  INFO 5160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T00:50:47.736+05:30  INFO 5160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T00:50:47.736+05:30  INFO 5160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-20T00:50:49.098+05:30  INFO 5160 --- [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 708 ms
+2026-06-20T00:51:37.006+05:30  INFO 5160 --- [http-nio-8080-exec-7] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T00:51:44.477+05:30  INFO 5160 --- [http-nio-8080-exec-7] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:10:36.988+05:30  INFO 5160 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:10:36.994+05:30  INFO 5160 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:10:36.999+05:30  INFO 5160 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:10:37.002+05:30  INFO 5160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:10:37.009+05:30  INFO 5160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:10:42.019+05:30  INFO 2116 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 2116 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:10:42.023+05:30 DEBUG 2116 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:10:42.024+05:30  INFO 2116 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:10:42.908+05:30  INFO 2116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:10:42.967+05:30  INFO 2116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:10:43.415+05:30  INFO 2116 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:10:43.431+05:30  INFO 2116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:10:43.431+05:30  INFO 2116 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:10:43.492+05:30  INFO 2116 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1417 ms
+2026-06-20T01:10:43.682+05:30  INFO 2116 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:10:43.743+05:30  INFO 2116 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:10:44.269+05:30  INFO 2116 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:10:44.306+05:30  INFO 2116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:10:44.701+05:30  INFO 2116 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cc44207
+2026-06-20T01:10:44.704+05:30  INFO 2116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:10:44.759+05:30  WARN 2116 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:10:44.781+05:30  INFO 2116 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:10:45.790+05:30  INFO 2116 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:10:45.872+05:30  INFO 2116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:10:46.016+05:30  INFO 2116 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:10:46.826+05:30  WARN 2116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:10:48.096+05:30  INFO 2116 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:10:48.112+05:30  INFO 2116 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 6.705 seconds (process running for 7.796)
+2026-06-20T01:12:01.879+05:30  INFO 2116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:12:01.879+05:30  INFO 2116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:12:01.879+05:30  INFO 2116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-20T01:12:02.187+05:30  INFO 2116 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:1
+2026-06-20T01:12:02.484+05:30  INFO 2116 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee deleted with id:1
+2026-06-20T01:13:04.554+05:30  INFO 2116 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:13:04.561+05:30  INFO 2116 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:13:04.564+05:30  INFO 2116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:13:04.568+05:30  INFO 2116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:13:04.576+05:30  INFO 2116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:13:09.358+05:30  INFO 2976 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 2976 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:13:09.363+05:30 DEBUG 2976 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:13:09.364+05:30  INFO 2976 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:13:10.373+05:30  INFO 2976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:13:10.457+05:30  INFO 2976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:13:11.048+05:30  INFO 2976 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:13:11.072+05:30  INFO 2976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:13:11.072+05:30  INFO 2976 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:13:11.149+05:30  INFO 2976 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1711 ms
+2026-06-20T01:13:11.400+05:30  INFO 2976 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:13:11.476+05:30  INFO 2976 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:13:12.052+05:30  INFO 2976 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:13:12.093+05:30  INFO 2976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:13:12.546+05:30  INFO 2976 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c68e82
+2026-06-20T01:13:12.549+05:30  INFO 2976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:13:12.609+05:30  WARN 2976 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:13:12.635+05:30  INFO 2976 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:13:13.804+05:30  INFO 2976 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:13:13.883+05:30  INFO 2976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:13:13.968+05:30  INFO 2976 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:13:14.264+05:30  WARN 2976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:13:14.772+05:30  INFO 2976 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:13:14.778+05:30  INFO 2976 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 6.126 seconds (process running for 7.338)
+2026-06-20T01:13:55.984+05:30  INFO 2976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:13:55.985+05:30  INFO 2976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:13:55.988+05:30  INFO 2976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-06-20T01:13:56.289+05:30  INFO 2976 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:2
+2026-06-20T01:13:56.573+05:30  INFO 2976 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee deleted with id:2
+2026-06-20T01:14:54.119+05:30  INFO 2976 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:14:54.127+05:30  INFO 2976 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:14:54.132+05:30  INFO 2976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:14:54.134+05:30  INFO 2976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:14:54.145+05:30  INFO 2976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:14:58.774+05:30  INFO 2504 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 2504 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:14:58.776+05:30 DEBUG 2504 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:14:58.777+05:30  INFO 2504 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:14:59.628+05:30  INFO 2504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:14:59.685+05:30  INFO 2504 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:15:00.130+05:30  INFO 2504 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:15:00.145+05:30  INFO 2504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:15:00.145+05:30  INFO 2504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:15:00.207+05:30  INFO 2504 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1377 ms
+2026-06-20T01:15:00.397+05:30  INFO 2504 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:15:00.457+05:30  INFO 2504 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:15:00.959+05:30  INFO 2504 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:15:00.995+05:30  INFO 2504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:15:01.387+05:30  INFO 2504 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8ecc457
+2026-06-20T01:15:01.390+05:30  INFO 2504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:15:01.445+05:30  WARN 2504 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:15:01.465+05:30  INFO 2504 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:15:02.469+05:30  INFO 2504 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:15:02.549+05:30  INFO 2504 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:15:02.632+05:30  INFO 2504 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:15:02.927+05:30  WARN 2504 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:15:03.426+05:30  INFO 2504 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:15:03.433+05:30  INFO 2504 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 5.28 seconds (process running for 6.36)
+2026-06-20T01:15:13.128+05:30  INFO 2504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:15:13.128+05:30  INFO 2504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:15:13.130+05:30  INFO 2504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-20T01:15:13.436+05:30  INFO 2504 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:2
+2026-06-20T01:15:13.595+05:30 ERROR 2504 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee not found with id:2
+2026-06-20T01:16:08.000+05:30  INFO 2504 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:16:08.160+05:30  INFO 2504 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:16:28.068+05:30  INFO 2504 --- [http-nio-8080-exec-3] c.e.e.service.EmployeeService            : Deleting employee with id:2
+2026-06-20T01:16:28.073+05:30 ERROR 2504 --- [http-nio-8080-exec-3] c.e.e.service.EmployeeService            : Employee not found with id:2
+2026-06-20T01:16:44.944+05:30  INFO 2504 --- [http-nio-8080-exec-4] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:16:44.955+05:30  INFO 2504 --- [http-nio-8080-exec-4] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:17:34.744+05:30  INFO 2504 --- [http-nio-8080-exec-5] c.e.e.service.EmployeeService            : Deleting employee with id:3
+2026-06-20T01:17:34.783+05:30  INFO 2504 --- [http-nio-8080-exec-5] c.e.e.service.EmployeeService            : Employee deleted with id:3
+2026-06-20T01:18:19.330+05:30  INFO 2504 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:18:19.336+05:30  INFO 2504 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:18:19.342+05:30  INFO 2504 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:18:19.345+05:30  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:18:19.353+05:30  INFO 2504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:18:23.917+05:30  INFO 18276 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 18276 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:18:23.920+05:30 DEBUG 18276 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:18:23.922+05:30  INFO 18276 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:18:24.772+05:30  INFO 18276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:18:24.832+05:30  INFO 18276 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:18:25.278+05:30  INFO 18276 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:18:25.294+05:30  INFO 18276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:18:25.294+05:30  INFO 18276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:18:25.354+05:30  INFO 18276 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1374 ms
+2026-06-20T01:18:25.542+05:30  INFO 18276 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:18:25.602+05:30  INFO 18276 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:18:26.122+05:30  INFO 18276 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:18:26.167+05:30  INFO 18276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:18:26.583+05:30  INFO 18276 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49f1184e
+2026-06-20T01:18:26.585+05:30  INFO 18276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:18:26.641+05:30  WARN 18276 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:18:26.663+05:30  INFO 18276 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:18:27.720+05:30  INFO 18276 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:18:27.919+05:30  INFO 18276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:18:28.104+05:30  INFO 18276 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:18:28.877+05:30  WARN 18276 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:18:30.101+05:30  INFO 18276 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:18:30.116+05:30  INFO 18276 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 6.799 seconds (process running for 7.879)
+2026-06-20T01:18:47.293+05:30  INFO 18276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:18:47.293+05:30  INFO 18276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:18:47.293+05:30  INFO 18276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-20T01:18:47.598+05:30  INFO 18276 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:4
+2026-06-20T01:18:47.880+05:30  INFO 18276 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee deleted with id:4
+2026-06-20T01:19:15.556+05:30  INFO 18276 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:19:15.631+05:30  INFO 18276 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:19:33.645+05:30  INFO 18276 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:19:33.651+05:30  INFO 18276 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:19:33.657+05:30  INFO 18276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:19:33.659+05:30  INFO 18276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:19:33.666+05:30  INFO 18276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:19:38.658+05:30  INFO 18912 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 18912 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:19:38.663+05:30 DEBUG 18912 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:19:38.663+05:30  INFO 18912 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:19:39.542+05:30  INFO 18912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:19:39.611+05:30  INFO 18912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:19:40.399+05:30  INFO 18912 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:19:40.449+05:30  INFO 18912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:19:40.449+05:30  INFO 18912 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:19:40.600+05:30  INFO 18912 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1879 ms
+2026-06-20T01:19:41.119+05:30  INFO 18912 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:19:41.265+05:30  INFO 18912 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:19:42.787+05:30  INFO 18912 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:19:42.890+05:30  INFO 18912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:19:44.496+05:30  INFO 18912 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ddac0b6
+2026-06-20T01:19:44.496+05:30  INFO 18912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:19:44.675+05:30  WARN 18912 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:19:44.748+05:30  INFO 18912 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:19:47.269+05:30  INFO 18912 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:19:47.478+05:30  INFO 18912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:19:47.695+05:30  INFO 18912 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:19:48.418+05:30  WARN 18912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:19:49.692+05:30  INFO 18912 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:19:49.708+05:30  INFO 18912 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 11.677 seconds (process running for 12.833)
+2026-06-20T01:19:49.843+05:30  INFO 18912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:19:49.843+05:30  INFO 18912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:19:49.843+05:30  INFO 18912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-20T01:19:50.178+05:30  INFO 18912 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:5
+2026-06-20T01:19:50.501+05:30  INFO 18912 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee deleted with id:5
+2026-06-20T01:20:08.102+05:30  INFO 18912 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:20:08.182+05:30  INFO 18912 --- [http-nio-8080-exec-2] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:20:31.047+05:30  INFO 18912 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T01:20:31.055+05:30  INFO 18912 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T01:20:31.061+05:30  INFO 18912 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:20:31.064+05:30  INFO 18912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T01:20:31.071+05:30  INFO 18912 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T01:20:35.681+05:30  INFO 9620 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 9620 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T01:20:35.684+05:30 DEBUG 9620 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T01:20:35.685+05:30  INFO 9620 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T01:20:36.553+05:30  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T01:20:36.622+05:30  INFO 9620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2026-06-20T01:20:37.080+05:30  INFO 9620 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T01:20:37.096+05:30  INFO 9620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T01:20:37.096+05:30  INFO 9620 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T01:20:37.157+05:30  INFO 9620 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1421 ms
+2026-06-20T01:20:37.393+05:30  INFO 9620 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T01:20:37.558+05:30  INFO 9620 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T01:20:38.993+05:30  INFO 9620 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T01:20:39.084+05:30  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T01:20:40.133+05:30  INFO 9620 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@694b1ddb
+2026-06-20T01:20:40.135+05:30  INFO 9620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T01:20:40.285+05:30  WARN 9620 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T01:20:40.338+05:30  INFO 9620 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T01:20:43.052+05:30  INFO 9620 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T01:20:43.264+05:30  INFO 9620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T01:20:43.497+05:30  INFO 9620 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T01:20:44.232+05:30  WARN 9620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T01:20:45.483+05:30  INFO 9620 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T01:20:45.499+05:30  INFO 9620 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 10.41 seconds (process running for 11.511)
+2026-06-20T01:20:48.812+05:30  INFO 9620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T01:20:48.812+05:30  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T01:20:48.813+05:30  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-20T01:20:49.113+05:30  INFO 9620 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Deleting employee with id:6
+2026-06-20T01:20:49.409+05:30  INFO 9620 --- [http-nio-8080-exec-1] c.e.e.service.EmployeeService            : Employee deleted with id:6
+2026-06-20T01:25:52.745+05:30  INFO 9620 --- [http-nio-8080-exec-3] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:25:52.811+05:30  INFO 9620 --- [http-nio-8080-exec-3] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T01:28:37.602+05:30  INFO 9620 --- [http-nio-8080-exec-5] c.e.e.service.EmployeeService            : Finding employee with id:7
+2026-06-20T01:28:37.612+05:30  INFO 9620 --- [http-nio-8080-exec-5] c.e.e.service.EmployeeService            : Employee fetched successfully with id:7
+2026-06-20T01:43:01.501+05:30  INFO 9620 --- [http-nio-8080-exec-7] c.e.e.service.EmployeeService            : Saving 1 requestDtoList
+2026-06-20T01:43:01.527+05:30  INFO 9620 --- [http-nio-8080-exec-7] c.e.e.service.EmployeeService            : Employees saved successfully
+2026-06-20T02:10:20.693+05:30  INFO 9620 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T02:10:20.701+05:30  INFO 9620 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T02:10:20.710+05:30  INFO 9620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T02:10:20.719+05:30  INFO 9620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T02:10:20.724+05:30  INFO 9620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T20:25:25.860+05:30  INFO 6532 --- [main] c.e.e.EmployeeManagementApplication      : Starting EmployeeManagementApplication using Java 21.0.11 with PID 6532 (C:\Users\Lenovo\IdeaProjects\EmployeeManagement\target\classes started by Lenovo in C:\Users\Lenovo\IdeaProjects\EmployeeManagement)
+2026-06-20T20:25:25.865+05:30 DEBUG 6532 --- [main] c.e.e.EmployeeManagementApplication      : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20T20:25:25.867+05:30  INFO 6532 --- [main] c.e.e.EmployeeManagementApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T20:25:27.959+05:30  INFO 6532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T20:25:28.054+05:30  INFO 6532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2026-06-20T20:25:28.826+05:30  INFO 6532 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-20T20:25:28.855+05:30  INFO 6532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T20:25:28.855+05:30  INFO 6532 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T20:25:28.980+05:30  INFO 6532 --- [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3034 ms
+2026-06-20T20:25:29.337+05:30  INFO 6532 --- [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T20:25:29.461+05:30  INFO 6532 --- [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T20:25:30.807+05:30  INFO 6532 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T20:25:30.884+05:30  INFO 6532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T20:25:31.561+05:30  INFO 6532 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4535bdc6
+2026-06-20T20:25:31.564+05:30  INFO 6532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T20:25:31.665+05:30  WARN 6532 --- [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T20:25:31.698+05:30  INFO 6532 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/sunil]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: sunil/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T20:25:33.192+05:30  INFO 6532 --- [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T20:25:33.314+05:30  INFO 6532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T20:25:33.442+05:30  INFO 6532 --- [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T20:25:33.845+05:30  WARN 6532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T20:25:34.443+05:30  INFO 6532 --- [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-20T20:25:34.451+05:30  INFO 6532 --- [main] c.e.e.EmployeeManagementApplication      : Started EmployeeManagementApplication in 9.445 seconds (process running for 10.968)
+2026-06-20T20:25:40.157+05:30  INFO 6532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T20:25:40.157+05:30  INFO 6532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-20T20:25:40.162+05:30  INFO 6532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-06-20T20:25:40.876+05:30  INFO 6532 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 377 ms
+2026-06-20T21:05:38.681+05:30  INFO 6532 --- [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-20T21:05:38.691+05:30  INFO 6532 --- [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-20T21:05:38.698+05:30  INFO 6532 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T21:05:38.703+05:30  INFO 6532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-20T21:05:38.710+05:30  INFO 6532 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
