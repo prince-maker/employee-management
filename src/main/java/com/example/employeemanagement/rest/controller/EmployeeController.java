@@ -1,0 +1,48 @@
+package com.example.employeemanagement.rest.controller;
+
+import com.example.employeemanagement.dto.EmployeeRequestDto;
+import com.example.employeemanagement.dto.EmployeeResponseDto;
+import com.example.employeemanagement.service.EmployeeService;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@Validated
+@RestController
+@RequestMapping("/api/employees")
+public class EmployeeController {
+    private final EmployeeService service;
+
+    public EmployeeController(EmployeeService service) {
+        this.service = service;
+    }
+
+    @PostMapping
+    public List<EmployeeResponseDto> postEmployees(@RequestBody List<@Valid  EmployeeRequestDto> requestDtoList) {
+        return service.postEmployees(requestDtoList);
+    }
+
+    @GetMapping("/{id}")
+    public EmployeeResponseDto getEmployeeById(@PathVariable @Min(1) Long id) {
+        return service.getEmployeeById(id);
+    }
+
+    @GetMapping
+    public List<EmployeeResponseDto> getEmployees() {
+        return service.getEmployees();
+    }
+
+    @PutMapping("/{id}")
+    public EmployeeResponseDto updateEmployee(@PathVariable @Min(1) Long id, @Valid @RequestBody EmployeeRequestDto requestDto) {
+        return service.updateEmployee(id, requestDto);
+
+    }
+
+    @DeleteMapping("/{id}")
+    public EmployeeResponseDto deleteEmployee(@PathVariable @Min(1) Long id) {
+        return service.deleteEmployee(id);
+    }
+}
