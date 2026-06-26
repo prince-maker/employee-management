@@ -4,6 +4,7 @@ import com.example.employeemanagement.dto.EmployeeRequestDto;
 import com.example.employeemanagement.dto.EmployeeResponseDto;
 import com.example.employeemanagement.entity.Department;
 import com.example.employeemanagement.entity.Employee;
+import com.example.employeemanagement.exception.EmployeeNotFoundException;
 import com.example.employeemanagement.mapper.EmployeeMapper;
 import com.example.employeemanagement.repository.DepartmentRepository;
 import com.example.employeemanagement.repository.EmployeeRepository;
