@@ -5,8 +5,11 @@ import com.example.employeemanagement.dto.EmployeeResponseDto;
 import com.example.employeemanagement.service.EmployeeService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
+import org.slf4j.LoggerFactory;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -15,6 +18,7 @@ import java.util.List;
 @RequestMapping("/api/employees")
 public class EmployeeController {
     private final EmployeeService service;
+    private static final Logger logger= LoggerFactory.getLogger(EmployeeController.class);
 
     public EmployeeController(EmployeeService service) {
         this.service = service;
