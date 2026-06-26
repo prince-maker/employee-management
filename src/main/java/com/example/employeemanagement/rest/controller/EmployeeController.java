@@ -31,7 +31,7 @@ public class EmployeeController {
 
     @GetMapping("/{id}")
     public EmployeeResponseDto getEmployeeById(@PathVariable @Min(1) Long id) {
-        logger.info("Fetching employee with id: {}", id);git
+        logger.info("Fetching employee with id: {}", id);
         return service.getEmployeeById(id);
     }
 
