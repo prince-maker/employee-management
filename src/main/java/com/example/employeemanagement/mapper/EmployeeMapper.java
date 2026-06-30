@@ -5,10 +5,11 @@ import com.example.employeemanagement.dto.EmployeeResponseDto;
 import com.example.employeemanagement.entity.Department;
 import com.example.employeemanagement.entity.Employee;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
+
 @AllArgsConstructor
 @Component
 public class EmployeeMapper {
@@ -21,40 +22,8 @@ public class EmployeeMapper {
         return responseDto;
     }
 
-    public Employee convertRequestDtoToEmployee(EmployeeRequestDto requestDto,Department department) {
-        Employee employee = new Employee();
-        employee.setName(requestDto.getName());
-        employee.setCountry(requestDto.getCountry());
-        employee.setDepartment(department);
 
-        return employee;
-    }
-
-    public List<EmployeeResponseDto> convertEmployeesToResponseDto(List<Employee> employees) {
-        ArrayList<EmployeeResponseDto> responseDtoList = new ArrayList<>();
-        for (Employee emp : employees) {
-            EmployeeResponseDto responseDto = EmployeeResponseDto.builder()
-                    .id(emp.getId()).name(emp.getName())
-                    .country(emp.getCountry()).build();
-            responseDtoList.add(responseDto);
-        }
-        return responseDtoList;
-    }
-
-    //DTO to employee mapping
-    public List<Employee> convertRequestDtoToEmployees(List<EmployeeRequestDto> requestDtoList, Department department) {
-        ArrayList<Employee> employeeList = new ArrayList<>();
-        for (EmployeeRequestDto employeeRequestDto : requestDtoList) {
-            Employee emp = new Employee();
-            emp.setName(employeeRequestDto.getName());
-            emp.setCountry(employeeRequestDto.getCountry());
-            emp.setDepartment(department);
-            employeeList.add(emp);
-        }
-        return employeeList;
-    }
-
-    public Employee tconvertRequestToEmployee(EmployeeRequestDto requestDto,Department department) {
+    public Employee convertRequestToEmployee(EmployeeRequestDto requestDto, Department department) {
         Employee employee = new Employee();
         employee.setName(requestDto.getName());
         employee.setCountry(requestDto.getCountry());
@@ -71,6 +40,31 @@ public class EmployeeMapper {
                 .departmentName(employee.getDepartment().getDepartmentName())
                 .build();
         return responseDto;
+    }
+
+    public List<EmployeeResponseDto> tconvertEmployeeToResponse(List<Employee> employees) {
+
+        List<EmployeeResponseDto> employeeResponseDto = employees.stream()
+                .map(emp -> EmployeeResponseDto.builder()
+                        .id(emp.getId())
+                        .name(emp.getName())
+                        .country(emp.getCountry())
+                        .departmentName(emp.getDepartment().getDepartmentName())
+                        .build())
+                .toList();
+        return employeeResponseDto;
+    }
+
+    public Page<EmployeeResponseDto> pageAllEmployee(Page<Employee> employeeList) {
+        Page<EmployeeResponseDto> employeeResponseDto = employeeList
+                .map(emp -> EmployeeResponseDto.builder()
+                        .id(emp.getId())
+                        .name(emp.getName())
+                        .country(emp.getCountry())
+                        .departmentName(emp.getDepartment().getDepartmentName())
+                        .build());
+        return employeeResponseDto;
+
     }
 
 

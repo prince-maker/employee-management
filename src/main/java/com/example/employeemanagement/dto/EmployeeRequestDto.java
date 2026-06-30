@@ -1,7 +1,6 @@
 package com.example.employeemanagement.dto;
 
 
-import com.example.employeemanagement.entity.Department;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 

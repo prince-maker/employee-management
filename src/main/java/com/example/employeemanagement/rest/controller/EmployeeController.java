@@ -1,15 +1,15 @@
 package com.example.employeemanagement.rest.controller;
 
+import com.example.employeemanagement.dto.EmployeePageResponseDto;
 import com.example.employeemanagement.dto.EmployeeRequestDto;
 import com.example.employeemanagement.dto.EmployeeResponseDto;
 import com.example.employeemanagement.service.EmployeeService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Min;
-import org.slf4j.LoggerFactory;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Pageable;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,37 +17,50 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
+    private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class);
     private final EmployeeService service;
-    private static final Logger logger= LoggerFactory.getLogger(EmployeeController.class);
 
     public EmployeeController(EmployeeService service) {
         this.service = service;
     }
 
     @PostMapping
-    public List<EmployeeResponseDto> postEmployees(@RequestBody List<@Valid  EmployeeRequestDto> requestDtoList) {
+    public List<EmployeeResponseDto> postEmployees(@RequestBody List<@Valid EmployeeRequestDto> requestDtoList) {
         return service.postEmployees(requestDtoList);
     }
 
     @GetMapping("/{id}")
-    public EmployeeResponseDto getEmployeeById(@PathVariable @Min(1) Long id) {
+    public EmployeeResponseDto getEmployeeById(@PathVariable String id) {
         logger.info("Fetching employee with id: {}", id);
         return service.getEmployeeById(id);
     }
 
     @GetMapping
-    public List<EmployeeResponseDto> getEmployees() {
-        return service.getEmployees();
+    public EmployeePageResponseDto getEmployees(Pageable pageable) {
+        return service.getEmployees(pageable);
     }
 
     @PutMapping("/{id}")
-    public EmployeeResponseDto updateEmployee(@PathVariable @Min(1) Long id, @Valid @RequestBody EmployeeRequestDto requestDto) {
+    public EmployeeResponseDto updateEmployee(@PathVariable String id, @Valid @RequestBody EmployeeRequestDto requestDto) {
         return service.updateEmployee(id, requestDto);
 
     }
 
     @DeleteMapping("/{id}")
-    public EmployeeResponseDto deleteEmployee(@PathVariable @Min(1) Long id) {
+    public EmployeeResponseDto deleteEmployee(@PathVariable String id) {
         return service.deleteEmployee(id);
     }
+
+    @GetMapping("/department")
+    public List<EmployeeResponseDto> getEmployeesByDepartment(@RequestParam String departmentName) {
+        return service.getEmployeesByDepartment(departmentName);
+
+
+    }
+
+    @GetMapping("/search")
+    public List<EmployeeResponseDto> getEmpByCountryDept(@RequestParam String country, @RequestParam String DepartmentName) {
+        return service.getEmpByCountryDept(country, DepartmentName);
+    }
+
 }
